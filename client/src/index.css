@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+}
+
+.ql-toolbar.ql-snow {
+    border: none !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    background: white;
+    position: sticky;
+    top: 60px;
+    /* Below header */
+    z-index: 10;
+}
+
+.ql-container.ql-snow {
+    border: none !important;
+}
+
+.ql-editor {
+    min-height: calc(100vh - 120px);
+    padding: 2rem !important;
+    max-width: 800px;
+    width: 100%;
+    margin: 2rem auto;
+    background: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 640px) {
+    .ql-editor {
+        padding: 1rem !important;
+        margin: 1rem auto;
+        min-height: calc(100vh - 100px);
+    }
+
+    .ql-toolbar.ql-snow {
+        top: 110px;
+        /* Adjust for stacked header on mobile if needed */
+    }
+}
